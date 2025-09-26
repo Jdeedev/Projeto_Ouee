@@ -1,0 +1,54 @@
+:root{
+  --bg:#0d0d0d;--sidebar:#111;--panel:rgba(20,20,20,.8);--text:#eaeaea;--muted:#a0a0a0;--accent:#ff6a00;--border:#222;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
+.layout{display:grid;grid-template-columns:280px 1fr;height:100vh;width:100%}
+/* Sidebar */
+aside{background:var(--sidebar);border-right:1px solid var(--border);padding:16px;display:flex;flex-direction:column;gap:12px}
+.brand{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.brand .logo{width:32px;height:32px;display:grid;place-items:center;background:#1e1e1e;border:1px solid #2a2a2a;border-radius:10px}
+.brand .title{font-weight:700;letter-spacing:.2px}
+.brand .title span{color:var(--accent)}
+.btn{background:var(--accent);border:none;color:#000;font-weight:700;border-radius:10px;padding:12px;cursor:pointer}
+.btn:hover{filter:brightness(1.1)}
+.search input{width:100%;padding:10px;border-radius:10px;background:#0c0c0c;border:1px solid #2a2a2a;color:var(--text)}
+.conversation-list{flex:1;overflow:auto;display:flex;flex-direction:column;gap:6px}
+.conv{padding:10px;border-radius:10px;border:1px solid #202020;background:#141414;cursor:pointer;color:#d0d0d0}
+.conv:hover{background:#1a1a1a}
+.side-footer{display:flex;flex-direction:column;gap:8px}
+.ghost{background:transparent;border:1px solid #2a2a2a;color:#c8c8c8;border-radius:10px;padding:10px;cursor:pointer}
+.ghost:hover{background:#1a1a1a}
+/* Main */
+.main{display:flex;flex-direction:column;height:100vh}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--border);backdrop-filter:blur(10px);background:var(--panel)}
+.icon-btn{background:#171717;border:1px solid #2a2a2a;color:#ddd;border-radius:10px;padding:8px 10px;cursor:pointer}
+.icon-btn:hover{background:#1d1d1d}
+.chat-area{flex:1;overflow:auto;padding:20px;display:flex;flex-direction:column;gap:14px}
+.message{display:flex}
+.bubble{max-width:800px;line-height:1.55;border-radius:14px;padding:14px 16px;border:1px solid #222;background:#141414;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.message.user .bubble{background:#222;border-color:#333}
+.tips{margin-top:8px;font-size:.9rem;color:#b3b3b3}
+.code{position:relative;margin-top:10px;border:1px solid #2a2a2a;background:#0c0c0c;border-radius:12px;overflow:hidden}
+.code pre{margin:0;padding:12px;overflow:auto;white-space:pre}
+.copy{position:absolute;top:6px;right:6px;border:1px solid #2a2a2a;background:#151515;color:#dcdcdc;border-radius:8px;padding:6px 10px;cursor:pointer}
+.copy:hover{background:#1b1b1b}
+/* Input */
+.input-area{display:flex;gap:12px;padding:14px;border-top:1px solid var(--border);background:var(--panel)}
+.message-input{flex:1;resize:none;border-radius:12px;border:1px solid #2d2d2d;background:#0f0f0f;color:var(--text);padding:12px;min-height:44px;max-height:220px}
+.message-input:focus{outline:none;border-color:var(--accent)}
+.send-btn{background:var(--accent);border:none;border-radius:12px;padding:0 18px;font-weight:700;cursor:pointer}
+.send-btn:hover{filter:brightness(1.1)}
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:grid;place-items:center}
+.modal-card{width:min(560px,92vw);background:#141414;border:1px solid #2a2a2a;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.5);overflow:hidden}
+.modal-head{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid #232323}
+.modal-body{display:flex;flex-direction:column;gap:10px;padding:16px}
+.oauth{border:1px solid #2a2a2a;background:#171717;color:#e8e8e8;border-radius:12px;padding:12px;cursor:pointer}
+.oauth:hover{background:#1d1d1d}
+.row{display:flex;justify-content:space-between;align-items:center;border:1px solid #242424;background:#111;padding:10px 12px;border-radius:12px}
+kbd{background:#1f1f1f;border:1px solid #2a2a2a;border-bottom-color:#1a1a1a;border-right-color:#1a1a1a;border-radius:6px;padding:2px 6px}
+/* Themes (demo only) */
+:root[data-theme="amoled"]{--bg:#000;--sidebar:#000;--panel:rgba(0,0,0,.8);--border:#121212;}
+:root[data-theme="light"]{--bg:#f8f8f8;--sidebar:#fff;--panel:rgba(255,255,255,.8);--text:#111;--border:#e5e5e5}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agente Ouee — Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="layout">
+  <aside>
+    <div class="brand">
+      <div class="logo">⚡</div>
+      <div class="title">Agente <span>Ouee</span></div>
+    </div>
+    <button class="btn new-conv" id="newConv">+ Nova conversa</button>
+    <div class="search">
+      <input id="search" placeholder="Pesquisar conversas…"/>
+    </div>
+    <div class="conversation-list" id="convList"></div>
+
+    <div class="side-footer">
+      <button class="ghost" id="settingsBtn">⚙️ Configurações</button>
+      <button class="ghost" id="loginBtn">🔐 Entrar</button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header>
+      <div class="h-left">
+        <button class="icon-btn" id="backBtn" title="Voltar (Alt+←)">←</button>
+        <strong>Agente Ouee</strong>
+      </div>
+      <div class="h-right">
+        <button class="icon-btn" id="exportBtn" title="Exportar conversa">⬇</button>
+      </div>
+    </header>
+
+    <div class="chat-area" id="chatArea">
+      <div class="message assistant">
+        <div class="bubble">
+          👋 Bem-vindo ao <b>Agente Ouee</b> — clone estilo Blackbox AI (demo estática).
+          <div class="tips">
+            <div>↵ Enviar • <kbd>Shift</kbd>+<kbd>↵</kbd> nova linha • <kbd>Ctrl</kbd>+<kbd>K</kbd> atalhos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <textarea id="prompt" class="message-input" rows="1" placeholder="Pergunte qualquer coisa…"></textarea>
+      <button id="send" class="send-btn">Enviar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal" id="loginModal" hidden>
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3>Entrar no Agente Ouee</h3>
+      <button class="icon-btn" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <button class="oauth google">Continuar com Google</button>
+      <button class="oauth github">Continuar com GitHub</button>
+      <button class="oauth chrome">Conectar ao Chrome</button>
+    </div>
+  </div>
+</div>
+
+<!-- Settings Modal -->
+<div class="modal" id="settingsModal" hidden>
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3>Configurações</h3>
+      <button class="icon-btn" data-close>✕</button>
+    </div>
+    <div class="modal-body">
+      <label class="row">
+        <span>Tema</span>
+        <select id="theme">
+          <option value="dark" selected>Escuro</option>
+          <option value="light">Claro</option>
+          <option value="amoled">AMOLED</option>
+        </select>
+      </label>
+      <label class="row">
+        <span>Modelo</span>
+        <select id="model">
+          <option>gpt-4o</option>
+          <option selected>gpt-4.1</option>
+          <option>llama-3.1</option>
+        </select>
+      </label>
+      <label class="row">
+        <span>Respostas com código</span>
+        <input type="checkbox" id="codeBlocks" checked/>
+      </label>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
