@@ -33,34 +33,125 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/de5e21db-24a2-4f4e-86c0-ed585b6e4f7b" width="700"/>
+</p>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<h1 align="center">Projeto_Ouee</h1>
+
+<p align="center">
+An AI-powered sales assistant designed to support commercial activities, improve productivity, and optimize sales workflows.
+</p>
+
+---
+
+## About
+
+Projeto_Ouee is an intelligent sales assistant built to help businesses and sales teams improve their daily operations.
+
+The platform uses AI to support sales-related activities such as customer interaction, lead assistance, workflow optimization, and decision support, making the sales process faster, smarter, and more efficient.
+
+---
+
+## Main Purpose
+
+Projeto_Ouee was created to assist with sales activities by providing AI-driven support for commercial routines and business processes.
+
+It aims to reduce manual effort, improve communication, and help teams focus on better results.
+
+---
+
+## Features
+
+* AI support for sales activities
+* Assistance with customer interaction
+* Lead handling and workflow optimization
+* Productivity-focused tools
+* Scalable and organized backend structure
+* Built for modern business environments
+
+---
+
+## Tech Stack
+
+* PHP
+* Laravel
+* AI-based assistance logic
+* Database integration
+* RESTful architecture
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/SEUUSUARIO/projeto_ouee.git
+```
+
+Go to the project folder:
+
+```bash
+cd projeto_ouee
+```
+
+Install dependencies:
+
+```bash
+composer install
+```
+
+Copy environment file:
+
+```bash
+cp .env.example .env
+```
+
+Generate the application key:
+
+```bash
+php artisan key:generate
+```
+
+Run migrations:
+
+```bash
+php artisan migrate
+```
+
+Start the server:
+
+```bash
+php artisan serve
+```
+
+---
+
+## Usage
+
+After starting the server, access:
+
+`http://localhost:8000`
+
+---
+
+## Goal
+
+The goal of Projeto_Ouee is to provide an AI-powered environment that supports sales teams, improves efficiency, and helps businesses manage sales activities in a smarter way.
+
+---
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Contributions are welcome. Feel free to fork the repository and submit improvements.
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-source and available under the MIT License.
+
+---
+
+Projeto_Ouee ©
